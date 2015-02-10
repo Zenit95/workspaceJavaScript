@@ -1,0 +1,36 @@
+<HTML>
+<HEAD>
+<TITLE> AbrirVentana </TITLE>
+<script language="JavaScript">
+function abrir(){
+	ventana=window.open("","","width=500,height=500,left=100,top=50");
+	//El primer parametro es la url,   					                           
+	//el segundo es eltarget("_parent","_top","") y                                                   
+	//el ultimno las caracteristicas de la ventana0
+	cadena="<body bgcolor="+color.value+">"
+	cadena+="<h1 align=center>"+titulo.value+"</h1>"
+	cadena+="<img src="+imagen.value+">"
+	ventana.document.write(cadena);
+
+}
+
+</script>
+</HEAD>
+
+<BODY>
+<h1 align=center>Abrir Ventana</h1>
+<p align=center>Color:<input name=color id=color><br>
+				Titulo:<input name=titulo id=titulo><br>
+				Imagen:<select name=imagen id=imagen>
+						<option value=imagenes/1.jpg>1
+						<option value=imagenes/2.jpg>2
+						<option value=imagenes/3.jpg>3
+						<option value=imagenes/4.jpg>4
+					   </select>
+ </p>
+<p align=center>
+<input type=button onClick="abrir()" value=AbrirVentana>
+</p>
+
+</BODY>
+</HTML>

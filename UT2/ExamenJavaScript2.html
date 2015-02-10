@@ -1,0 +1,36 @@
+<html>
+<head><title>innerHTML</title>
+
+<script language="JavaScript">
+cont=0;
+function insertar(){
+	if(cont==0){
+		pos1.innerHTML="<img src='imagenes/1.jpg' id=imagen1 name=imagen1 width=250>";
+		pos2.innerHTML="<img src='imagenes/2.jpg' id=imagen1 name=imagen1 width=250>";
+		cont=1;
+	}
+	else{
+		cont=0;
+		pos2.innerHTML="<img src='imagenes/1.jpg' id=imagen1 name=imagen1 width=250>";
+		pos1.innerHTML="<img src='imagenes/2.jpg' id=imagen1 name=imagen1 width=250>";
+	}
+}
+</script>
+</head>
+<body>
+<h1 align=center id=inner name=inner></h1>
+<table border=1 align=center width=500 bgcolor=blue>
+<tr>
+	<td name=pos1 id=pos1>
+		
+	</td>
+	<td name=pos2 id=pos2>
+		
+	</td>
+
+</tr>
+</table>
+<p align=center><input type=button value="cambiar" onClick="insertar()"></p>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>Cambio de imagen</TITLE>
+<META NAME="Generator" CONTENT="EditPlus">
+<META NAME="Author" CONTENT="">
+<META NAME="Keywords" CONTENT="">
+<META NAME="Description" CONTENT="">
+
+<script language="JavaScript">
+x=0;
+function cambiar(){
+		x=((x+1)%4);
+		imagen.src="imagenes/"+(x+1)+".jpg";
+}
+
+
+</script>
+</HEAD>
+<BODY onLoad="setInterval('cambiar()',1000)">
+<h1 align=center>Marquesina</h1>
+<p align=center>
+<img id=imagen name=imagen src=imagenes/1.jpg height=300>
+</p>
+
+</BODY>
+</HTML>

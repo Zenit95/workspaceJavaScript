@@ -1,0 +1,31 @@
+<html>
+<head><title>Evento de ratón</title>
+<style type="text/css">
+#pelota1{position:absolute; left:200; top:200}
+#pelota2{position:absolute; left:500; top:200}
+</style>
+<script language="JavaScript">
+objeto = null;
+function escribir(){
+	window.status=event.x + " - " + event.y;
+	if(objeto != null){
+		objeto.style.left = event.x - 75;
+		objeto.style.top = event.y - 75;
+		window.event.returnValue = false;
+	}
+}
+function cargar(){
+	objeto = event.srcElement;
+}
+function soltar(){
+	objeto = null;
+}
+</script>
+</head>
+<body onmouseup="soltar()" onmousedown="cargar()" onmousemove="escribir()">
+
+<img id=pelota1 name=pelota1 src=estilos/imagenes/balon.jpg height=150>
+<img id=pelota2 name=pelota2 src=estilos/imagenes/balon.jpg height=150>
+
+</body>
+</html>

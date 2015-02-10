@@ -1,0 +1,69 @@
+<html>
+<head><title>Rotación de imágenes</title>
+<script language="JavaScript">
+objetosX = new Array(4);
+objetosY = new Array(4);
+objetosX[0] = new Array(150, 165, 180, 195, 210, 225, 240, 255, 270, 285, 300);
+objetosY[0] = new Array(200, 185, 170, 155, 140, 125, 110, 95, 80, 65, 50);
+objetosX[1] = new Array(300, 315, 330, 345, 360, 375, 390, 405, 420,435, 450);
+objetosY[1] = new Array(50, 65, 80, 95, 110, 125, 140, 155, 170, 185, 200);
+objetosX[2] = new Array(450, 435, 420, 405, 390, 375, 360, 345, 330, 315, 300);
+objetosY[2] = new Array(200, 215, 230, 245, 260, 275, 290, 305, 320, 335, 350);
+objetosX[3] = new Array(300, 285, 270, 255, 240, 225, 210, 195, 180, 165, 150);
+objetosY[3] = new Array(350, 335, 320, 305, 290, 275, 260, 245, 230, 215, 200);
+posiciones = new Array(2,3,4,1);
+function rotar(){
+	if(cont <11){
+		for(i=1;i<=4;i++){
+			obj=(document.getElementById("foto"+posiciones[i-1]));
+			obj.style.left=objetosX[i-1][cont];
+			obj.style.top=objetosY[i-1][cont];
+		}
+			/*foto1.style.left = objetosX[0][cont];
+			foto1.style.top = objetosY[0][cont];
+			foto2.style.left = objetosX[1][cont];
+			foto2.style.top = objetosY[1][cont];
+			foto3.style.left = objetosX[2][cont];
+			foto3.style.top = objetosY[2][cont];
+			foto4.style.left = objetosX[3][cont];
+			foto4.style.top = objetosY[3][cont];*/
+		cont ++;
+		setTimeout("rotar()", 200);
+	}
+	
+}
+function iniciar(){	
+	aux=posiciones[3];
+	for(x=3;x>=1;x--){
+		posiciones[x]=posiciones[x-1];
+	}
+	posiciones[0]=aux;
+	cont = 0;
+	rotar();
+}
+</script>
+
+<style type="text/css">
+div{position:absolute}
+#foto1{left:150; top:200}
+#foto2{left:300; top:50}
+#foto3{left:450; top:200}
+#foto4{left:300; top:350}
+</style>
+</head>
+<body>
+<div name=foto1 id=foto1>
+<img src="imagenes/1.jpg" width=100 height=100>
+</div>
+<div name=foto2 id=foto2>
+<img src="imagenes/2.jpg" width=100 height=100>
+</div>
+<div name=foto3 id=foto3>
+<img src="imagenes/3.jpg" width=100 height=100>
+</div>
+<div name=foto4 id=foto4>
+<img src="imagenes/4.jpg" width=100 height=100>
+</div>
+<input type=button value=Rotar onclick="iniciar()">
+</body>
+</html>

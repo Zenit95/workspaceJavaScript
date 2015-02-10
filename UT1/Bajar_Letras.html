@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> Bajar Letras </TITLE>
+  <script language="Javascript">
+	function bajar(){
+		//alert(s1.value.length);
+		s2.value+=s1.value.substring(0,1);
+		s1.value=s1.value.substring(1,s1.value.length);
+
+	}
+
+  </script>
+ </HEAD>
+
+ <BODY onLoad="bajar()">
+ <h1 align=center>Bajar Letras</h1>
+ <p align=center>
+ <input id=s1 name=s1 size=25> <br><br>
+ <input type=button onClick="bajar()"id=arriba name=arriba size=25 value=Pulsame> <br><br> 
+ <input id=s2 name=s2 size=25>
+ </p>
+
+ </BODY>
+</HTML>

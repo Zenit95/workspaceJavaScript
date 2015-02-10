@@ -1,0 +1,22 @@
+<HTML>
+ <HEAD>
+  <TITLE> Ejercicio 3 </TITLE>
+<script language="JavaScript">
+imagenfondo=1;
+function cambiar(){
+	imagen.src="./imagenes/"+imagenfondo+".jpg";
+	imagenfondo++;
+	if(imagenfondo>4){
+	imagenfondo=1;
+	}
+	setTimeout("cambiar()",1000)
+}
+</script>
+</HEAD>
+
+<BODY onload="cambiar()">
+
+	<img width="500" id="imagen" name="imagen" src="" />
+	
+</BODY>
+</HTML>

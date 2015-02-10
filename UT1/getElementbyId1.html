@@ -1,0 +1,35 @@
+												<HTML>
+<HEAD>
+<TITLE>getElement by Id</TITLE>
+<script language="JavaScript">
+function cambiar(){
+	objeto=document.getElementById(camb.value);
+	cambio=objeto.src;
+	objeto.src=imagen.src;
+	imagen.src=cambio;
+
+}
+</script>
+</HEAD>
+
+<BODY>
+<h1 align=center>Imagenes con Select</h1>
+<h1 align=center>
+<table border=1>
+	<tr>
+		<td align=center>UNO<br><img name=uno id=uno src=imagenes/1.jpg width=150></td>
+		<td align=center>DOS<br><img name=dos id=dos src=imagenes/2.jpg width=150></td>
+		<td align=center>TRES<br><img name=tres id=tres src=imagenes/3.jpg width=150></td>
+		<td align=center>CUATRO<br><img name=cuatro id=cuatro src=imagenes/4.jpg width=150></td>
+	</tr>
+</table><br><br>
+<select name=camb id=camb onChange="cambiar()">
+	<option value="uno">Uno
+	<option value="dos">Dos
+	<option value="tres">Tres
+	<option value="cuatro">Cuatro
+</select>
+<img src=imagenes/puesta.jpg name=imagen id=imagen width=300>
+</h1>
+</BODY>
+</HTML>

@@ -1,0 +1,31 @@
+<html>
+<head><title>Tres en raya</title>
+<style type="text/css">
+TD.val{background-color:yellow; width:30; height:35}
+TD.noval{background-color:lime; width:30; height:35}
+</style>
+<script language="JavaScript">
+i=0;
+function cambiar(){
+      i = (i+1) % 2;
+      objeto = event.srcElement;
+      if(objeto.className=="val"){	
+	if(i == 0)
+		imagen = "circulo.jpg";
+	else
+		imagen = "cruz.jpg";
+	objeto.innerHTML = "<img src=" + imagen + " height=35 width=30>";
+	objeto.className = "noval";
+     }
+}
+</script>
+</head>
+<body onclick="cambiar()">
+<h1 align=center>TRES EN RAYA</h1>
+<table align=center>
+	<tr><td class="val"></td><td class="val"></td><td class="val"></td></tr>
+	<tr><td class="val"></td><td class="val"></td><td class="val"></td></tr>
+	<tr><td class="val"></td><td class="val"></td><td class="val"></td></tr>
+</table>
+</body>
+</html>

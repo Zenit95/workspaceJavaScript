@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> getElementById </TITLE>
+  <script language="Javascript">
+	function cambiar(){
+		//getElementById coge un string y lo entiende como un objeto
+		objeto=document.getElementById(camb.value);
+		objeto.src="./imagenes/Puesta.jpg";
+	}
+  </script>
+  
+ </HEAD>
+
+ <BODY>
+<h1 align=center><FONT SIZE="10" COLOR="#00CC00">Utilizacion de getElementById</FONT></h1>
+</marquee>
+
+	<table border=0 align=center >
+		<tr>
+			<td><img src="./imagenes/1.jpg" height=200 onClick="cambiar(1)"></td>
+			<td><img src="./imagenes/2.jpg" height=200 onClick="cambiar(2)"></td>
+			<td><img src="./imagenes/3.jpg" height=200 onClick="cambiar(3)"></td>
+			<td><img src="./imagenes/4.jpg" height=200 onClick="cambiar(4)"></td>
+		</tr>
+	</table>
+<p align=center>
+<select id=camb name=camb onChange="cambiar()">
+	<option value="1" >Primavera
+	<option value="2" >Verano
+	<option value="3" >Otoño
+	<option value="4" >Inverno
+</select>
+</p>
+
+
+ </BODY>
+</HTML>

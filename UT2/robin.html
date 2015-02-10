@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title>Robin Hood</title>
+		<style type="text/css">
+			#robin{position:absolute; left:20; top:200; height:200}	
+			#flecha{position:absolute; left:200; top:200; height:20}
+			#globo{position:absolute; right:0; top:10}
+		</style>
+		<script language="JavaScript">
+		var bool = true;
+		
+			function mover(){
+				robin.style.top = event.y - 100;
+				if(bool){
+					flecha.style.top = event.y - 36;
+				}
+			}
+			
+			function disparar(){
+				bool = false;
+			}
+		</script>	
+	</head>
+	
+	<body onmousemove="mover()" onclick="disparar()">
+		<img id="robin" name="robin" src="imagenes/robin.png">
+		<img id="flecha" name="flecha" src="imagenes/flecha.png">
+		<img id="globo" name="globo" src="imagenes/globo.png">
+	</body>
+	
+</html>

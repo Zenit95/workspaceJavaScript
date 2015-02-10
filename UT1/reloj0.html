@@ -1,0 +1,31 @@
+<html>
+<head><title>Reloj en JavaScript</title>
+<script language="JavaScript">
+function actualizar(){
+
+		fecha=new  Date();
+		horas=fecha.getHours();
+		minutos=fecha.getMinutes();
+		segundos=fecha.getSeconds();
+
+		horaStr=""
+		horaStr+=((horas<10)?"0":"")+horas;
+		horaStr+=":"+((minutos<10)?"0":"")+minutos;
+		horaStr+=":"+((segundos<10)?"0":"")+segundos;
+
+		caja.value=horaStr
+
+		//setTimeout("actualizar()",1000);
+		setInterval("actualizar()",1000);
+}
+</script>
+</head>
+<body onLoad="actualizar()">
+<h1 align=center>Reloj digital</h1>
+<center>
+<input id=caja name=caja size=8>
+
+
+
+</body>
+</html>

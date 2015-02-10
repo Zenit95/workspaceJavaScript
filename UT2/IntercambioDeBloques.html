@@ -1,0 +1,37 @@
+<HTML>
+<HEAD>
+<TITLE> Intercambio de bloques </TITLE>
+<style type="text/css">
+.izq{position:relative;left:20;top:50;width:300;background:lemonchiffon}
+.dcha{position:absolute;left:490;top:120;width:300;background:lightcoral}
+#cambiar{position:absolute;left:365;top:180}
+</style>
+<script language="JavaScript">
+function cambiar(){
+	if(bloque1.className=="izq"){
+		bloque1.className="dcha"
+		bloque2.className="izq"
+	}
+	else{
+		bloque2.className="dcha"
+		bloque1.className="izq"
+	}
+	
+}
+</script>
+</HEAD>
+
+<BODY>
+<h1 align=center>Intercambio de bloques</h1>
+<div class=izq id=bloque1 name=bloque1>
+	<img src=imagenes/1.jpg width=300>
+	El posicionamiento absoluto es la capacidad de situar un objeto, o un elemento o un control HTML, en cuaquier punto de una pagina web estableciendo la esquina superior izquierda del elemento en valores x e y especificos
+</div>
+<div class=dcha id=bloque2 name=bloque2>
+	<img src=imagenes/2.jpg width=300>
+	El posicionamiento relativo significa que el objeto HTML se situa con respecto a su posicion original como ocurre de manera natural dentro del codigo HTML. ESto incluye los posibles saltos de linea.
+</div>
+<input type=button value=cambiar id=cambiar name=cambiar onClick="cambiar()">
+
+</BODY>
+</HTML>

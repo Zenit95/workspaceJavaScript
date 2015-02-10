@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE> MoverLetras </TITLE>
+<script language="JavaScript">
+texto="En un lugar de la mancha";
+cont=0;
+function bajar(){
+campo1.value=texto.substring(cont,texto.length);
+campo2.value=texto.substring(0,cont);
+cont++;
+}
+function subir(){
+campo1.value=texto.substring(cont,texto.length);
+campo2.value=texto.substring(0,cont-1);
+cont--;
+}
+</script>
+</HEAD>
+
+<BODY>
+<center>
+<input value="En un lugar de la mancha" size="40" name="campo1" id="campo1"></input>
+<br><br><br>
+<input type="button" value="Bajar" onclick="bajar()">
+<input type="button" value="Subir" onclick="subir()">
+<br><br><br>
+<input size="40" id="campo2" name="campo2"></input>
+<center>
+</BODY>
+</HTML>

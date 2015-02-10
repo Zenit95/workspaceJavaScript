@@ -1,0 +1,19 @@
+<html>
+<head><title>Funciones en JavaScript</title>
+<script language="JavaScript">
+
+function enColor(color, texto){
+	document.write("<font color=" + color + ">" + texto + "<br>");
+	for(i=1; i<=texto.length; i++)
+		document.write("-");
+	document.write("</font><br>");
+}
+</script>
+</head>
+<body>
+<script language="JavaScript">
+enColor("red", "Asignatura lenguaje de marcas");
+enColor("green", "Esta frase está escrita en verde");
+</script>
+</body>
+</html>

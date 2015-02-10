@@ -1,0 +1,36 @@
+<html>
+<head><title>Trabajando con formularios</title>
+</head>
+<body>
+<form name=formulario method=post action=lugardestino> <!-->
+<table align=center border=1>
+		<tr><td><input type=text size=10 maxlength=5 value="Hola que tal"></td></tr>
+		<tr><td>
+		<select size=2 multiple name=ciudad>
+			<option value=28>Madrid
+			<option value=8>Barcelona
+			<option value=50 selected>Zaragoza			
+		</select>
+		<tr><td> De 0 a 18<input type=radio name=edad value=1><br>
+			 Entre 18 y 30<input type=radio name=edad value=2 checked><br>
+			 Entre 30 y 60<input type=radio name=edad value=3><br>
+			 Mayor de 60<input type=radio name=edad value=4><br>
+		</td></tr>
+		<tr><td> Fútbol<input type=checkbox name=deportes value=1><br>
+			 Baloncesto<input type=checkbox name=deportes value=2><br>
+			 Hockey<input type=checkbox name=deportes value=3><br>
+			 Balonmano<input type=checkbox name=deportes value=4><br>
+			 Ciclismo<input type=checkbox name=deportes value5><br>
+			 Fórmula 1<input type=checkbox name=deportes value=6><br>
+			 Motociclismo<input type=checkbox name=deportes value=7><br>
+		</td></tr>
+		<tr><td><textarea cols=50 rows=5>Comenta lo que quieras...</textarea></td></tr>
+		<tr><td><input type=reset value=Borrar></td></tr>
+		<tr><td><valign=center><input type=submit value=Enviar></td></tr>
+
+
+
+</table>
+</form>
+</body>
+</html>

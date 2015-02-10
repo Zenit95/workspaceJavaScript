@@ -1,0 +1,30 @@
+	<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> Botones </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+<script language="JavaScript">
+function cambiar(cual){
+	imagen.src="imagenes/" + cual + ".jpg";
+}
+</script>
+</HEAD>
+
+<BODY>
+<marquee>
+<h1 align=center>Pulsa un imagen para que se sea la principal</h1>
+</marquee>
+<p align=center>
+<img id=imagen name=imagen src=imagenes/1.jpg height=350>
+</p>
+<table border=0 align=center >
+	<tr><td><img src=imagenes/1.jpg height=100 onClick="cambiar(1)"></td>
+	<td><img src=imagenes/2.jpg height=100 onClick="cambiar(2)"></td>
+	<td><img src=imagenes/3.jpg height=100 onClick="cambiar(3)"></td>
+	<td><img src=imagenes/4.jpg height=100 onClick="cambiar(4)"></td></tr>
+</table>
+</BODY>
+</HTML>

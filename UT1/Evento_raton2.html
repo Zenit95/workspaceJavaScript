@@ -1,0 +1,29 @@
+<html>
+<head><title>Evento mouseover</title>
+
+<script language="JavaScript">
+function cambiar(){
+		imagen.src="imagenes/1.jpg";
+}
+
+function cambiar1(){
+		imagen.src="imagenes/2.jpg";
+
+}
+
+function cambiar2(){
+		imagen.src="imagenes/3.jpg";
+
+}
+
+function cambiar3(){
+		imagen.src="imagenes/4.jpg";
+
+}
+</script>
+</head>
+<body>
+<img src="imagenes/1.jpg" id=imagen name=imagen width=700 onMouseOver="this.src='imagenes/2.jpg'" onMouseOut="this.src='imagenes/1.jpg'">
+<img src="imagenes/3.jpg" id=imagen name=imagen width=700 onMouseOver="this.src='imagenes/4.jpg'" onMouseOut="this.src='imagenes/3.jpg'">
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE> MoverImagenes </TITLE>
+<script language="JavaScript">
+n=0;
+function cambiar(){
+for(i=0;i<=document.images.length-1;i++){
+		x= ((n+i)%4)+1;
+		document.images[i].src = "./imagenes/"+ x +".jpg";
+	}
+
+	n=(n+1)%4;
+	setTimeout("cambiar()",500)
+	}
+
+/*valor1=1;
+valor2=2;
+valor3=3;
+valor4=4;
+function cambiar(){
+uno.src="imagenes/"+valor1+".jpg";
+dos.src="imagenes/"+valor2+".jpg";
+tres.src="imagenes/"+valor3+".jpg";
+cuatro.src="imagenes/"+valor4+".jpg";
+valor1--;
+valor2--;
+valor3--;
+valor4--;
+if(valor1<'1'){valor1='4'}
+if(valor2<'1'){valor2='4';}
+if(valor3<'1'){valor3='4';}
+if(valor4<'1'){valor4='4';}
+setTimeout("cambiar()",500);
+}*/
+</script>
+
+
+</HEAD>
+
+<BODY onload="cambiar()">
+<table>
+<tr>
+	<td colspan="4"><img src="" width="100" height="100" name="uno" id="uno">
+	<img src="" width="100" height="100" name="dos" id="dos">
+	<img src="" width="100" height="100" name="tres" id="tres">
+	<img src="" width="100" height="100" name="cuatro" id="cuatro"></td>
+	</tr>
+</table>
+<!-- <input type="button" onclick="cambiar()" value="mover"></input> -->
+</BODY>
+</HTML>

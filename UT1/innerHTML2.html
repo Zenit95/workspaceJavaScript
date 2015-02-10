@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> innerHTML2 </TITLE>
+  
+ </HEAD>
+<script language="Javascript">
+function cargar(){
+		titulo.innerHTML="<font color=red>Ejemplo básico de innerHTML</font>";
+}
+function insertar(){
+		td1.innerHTML="<img src=imagenes/1.jpg width=200>"
+		td2.innerHTML="<img src=imagenes/2.jpg width=200>"
+}
+</script>
+
+ <BODY onLoad="cargar()">
+	<table align=center border=1 cellspacing=5 cellpadding=100>
+		<tr bgcolor=white>
+			<td id=td1 name=td1></td>
+			<td id=td2 name=td2></td>	  
+		</tr>
+			<td colspan=2 align=center><input type=button value="Cargar imagenes" onClick="insertar()"></td>
+	</table>
+ </BODY>
+</HTML>

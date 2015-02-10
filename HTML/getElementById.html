@@ -1,0 +1,34 @@
+<HTML>
+<HEAD>
+<TITLE> getElementById </TITLE>
+<script language="JavaScript">
+function operar(){
+//getElementById coge un string y lo entiende como un objeto
+objeto=document.getElementById(seleccion.value);
+objeto.src="./imagenes/puesta.jpg";
+}
+</script>
+</HEAD>
+
+<BODY bgcolor="blue">
+<center>
+<table bgcolor="yellow">
+	<tr>
+		<td colspan="4"><img src="./imagenes/1.jpg" width="100" height="100" name="uno" id="uno">
+		<img src="./imagenes/2.jpg" width="100" height="100"  name="dos" id="dos">
+		<img src="./imagenes/3.jpg" width="100" height="100" name="tres" id="tres">
+		<img src="./imagenes/4.jpg" width="100" height="100" name="cuatro" id="cuatro"></td>
+	</tr>
+<table>
+<br>
+<select onChange="operar()" name="seleccion" id="seleccion">
+	<option value="uno" >Uno
+	<option value="dos" >Dos
+	<option value="tres">Tres
+	<option value="cuatro">Cuatro
+</select>
+
+<img src="./imagenes/puesta.jpg" width="100" height="100"  name="puesta" id="puesta">
+</center>
+</BODY>
+</HTML>

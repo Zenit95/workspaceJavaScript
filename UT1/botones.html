@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> Botones </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+<script language="JavaScript">
+function cambiar1(){
+	imagen.src="imagenes/1.jpg";
+}
+function cambiar2(){
+	imagen.src="imagenes/2.jpg";
+}
+function cambiar3(){
+	imagen.src="imagenes/3.jpg";
+}
+function cambiar4(){
+	imagen.src="imagenes/4.jpg";
+}
+</script>
+</HEAD>
+
+<BODY>
+<h2 align=center>Pulsa un botón para cambiar la imagen</h2>
+<p align=center>
+<img id=imagen name=imagen src=imagenes/1.jpg height=300>
+</p>
+<table border=0 align=center >
+	<tr><td><input type=button value=1 onClick="cambiar1()"></td>
+	<td><input type=button value=2 onClick="cambiar2()"></td>
+	<td><input type=button value=3 onClick="cambiar3()"></td>
+	<td><input type=button value=4 onClick="cambiar4()"></td></tr>
+</table>
+</BODY>
+</HTML>

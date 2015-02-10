@@ -1,0 +1,24 @@
+<html>
+<head><title>Calculadora</title>
+<script language="JavaScript">
+
+function operar(operador){
+	switch(operador){
+		case "+":
+			r1.value = parseInt(s1.value) + parseInt(s2.value);
+			break;
+		case "-":
+			res1.value = parseInt(sus1.value) - parseInt(sus2.value);
+	}
+}
+</script>
+</head>
+<body>
+<h1 align=center>Calculadora</h1>
+<br><br>
+<table border=1 align=center >
+<tr><td><input id=s1 name=s1></td><td> + </td><td><input id=s2 name=s2></td><td><input type=button value="=" onClick="operar('+')"></td><td><input id=r1 name=r1></td></tr>
+<tr><td><input id=sus1 name=sus1></td><td> - </td><td><input id=sus2 name=sus2></td><td><input type=button value="=" onClick="operar('-')"></td><td><input id=res1 name=res1></td></tr>
+</table>
+</body>
+</html>

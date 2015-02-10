@@ -1,0 +1,43 @@
+<html>
+<head><title>Reloj en JavaScript</title>
+<script language="JavaScript">
+
+function actualizar(){
+
+	fecha=new Date();
+	horas=fecha.getHours();
+	minutos=fecha.getMinutes();
+	segundos=fecha.getSeconds();
+
+	//El signo += es un operador acumulador, Ej, x=x+3 es igual a x +=3.
+
+	horaStr="";
+
+	/*Lo que tenemos abajo es un if, pero en distinto formato.
+	  horas<10 es la condicion. */	
+	
+	horaStr +=((horas<10)?"0":"") + horas;
+	horaStr +=":" + ((minutos<10)?"0":"") + minutos;
+	horaStr +=":" + ((segundos<10)?"0":"") + segundos;
+	
+	caja.value=horaStr;
+	
+
+
+
+
+
+}
+</script>
+</head>
+<body onLoad="setInterval('actualizar()',1000)";> 
+<h1 align=center>Reloj digital</h1>
+<center>
+<input id=caja value=34 name=caja size=8>
+
+
+</body>
+</html>
+
+
+

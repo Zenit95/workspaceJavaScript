@@ -1,0 +1,21 @@
+<html>
+<head><title>Cambiar imagen</title>
+<script language="JavaScript">
+function cambiar(cual){
+	imagen.src="imagenes/" + cual + ".jpg";
+}
+</script>
+</head>
+<body>
+<h2 align=center>Pulsa un botón para cambiar la imagen</h2>
+<p align=center>
+<img id=imagen name=imagen src=imagenes/1.jpg height=300>
+</p>
+<table border=0 align=center >
+	<tr><td><input type=button value=1 onClick="cambiar(1)"></td>
+	<td><input type=button value=2 onClick="cambiar(2)"></td>
+	<td><input type=button value=3 onClick="cambiar(3)"></td>
+	<td><input type=button value=4 onClick="cambiar(4)"></td></tr>
+</table>
+</body>
+</html>

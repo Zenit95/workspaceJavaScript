@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title>Reemplazar</title>
+		<style type="text/css">
+			H1{margin-left:0.25in; color:navy; font-size:30pt}
+			h2{margin-left:0.5in; color:red; font-size:23pt}
+			p{margin-left:0.75in; margin-right:1.5in; color:blue; font-size:15pt}
+		</style>
+		<script language="JavaScript">
+			function alterar(){
+				nombre=event.srcElement.child;
+				objeto=document.getElementById(nombre);
+				objeto.style.display="";
+			}
+		</script>
+	</head>
+	<body onclick="alterar()">
+		<H1 child="test">Reemplazando texto dinamicamente</H1>
+		<H2 id="test" style="display:none">Esta es la segunda cabecera</H2>
+		<p style="display:none">Esto es lo que se ve si se hace click sobre
+		ambas cabeceras. Es similar en estilo, al software
+		de presentación, en que el contenido se muestra
+		según las acciones del usuario.
+		</p>
+	</body>
+
+</html>

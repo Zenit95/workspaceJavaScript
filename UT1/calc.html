@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>Calculadora</title>
+<script language="JavaScript">
+
+function resolver(simbolo){
+	if (simbolo == '+'){
+		s3.value=parseInt(s1.value) + parseInt(s2.value);
+	}
+	if (simbolo == '-'){
+		r3.value=parseInt(r1.value) - parseInt(r2.value);
+	}
+	if (simbolo == '*'){
+		m3.value=parseInt(m1.value) * parseInt(m2.value);
+	}
+	if (simbolo == '/'){
+		d3.value=parseInt(d1.value) / parseInt(d2.value);
+	}
+
+
+}
+
+
+
+</script>
+</head>
+<body>
+<h1 align="center">Calculadora</h1>
+<table align="center">
+<tr>
+<td>
+<input size="8" type="text" id="s1" name="s1"/> + <input size="8" type="text" id="s2" name="s2">
+<input type="button" value="=" onclick="resolver('+')" /><input size="8" type="text" id="s3" name="s3" />
+</td>
+
+
+</tr>
+<tr>
+	<td>
+		<input size="8" type="text" id="r1" name="r1"/> - <input size="8" type="text" id="r2" name="r2">
+		<input type="button" value="=" onclick="resolver('-')"/><input size="8" type="text" id="r3" name="r3" />
+	</td>
+</tr>
+<tr>
+	<td>
+		<input size="8" type="text" id="m1" name="m1"/> * <input size="8" type="text" id="m2" name="m2">
+		<input type="button" value="=" onclick="resolver('*')"/><input size="8" type="text" id="m3" name="m3" />
+	</td>
+</tr>
+<tr>
+	<td>
+		<input size="8" type="text" id="d1" name="d1"/> / <input size="8" type="text" id="d2" name="d2">
+		<input type="button" value="=" onclick="resolver('/')"/><input size="8" type="text" id="d3" name="d3" />
+	</td>
+</tr>
+
+
+
+
+</body>
+</html>

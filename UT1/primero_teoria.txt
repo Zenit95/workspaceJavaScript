@@ -1,0 +1,21 @@
+<html>
+<head>
+<title> "titulo" </title>
+</head>
+<body bgcolor="color de fondo" background="imagen de fondo" text="color del tex
+
+<br>salto de linea
+<u> subrayar
+<b> negrita
+<i> cursiva
+<s> tachado
+<pre> respeta espacios y saltos de lineas
+
+
+
+
+
+
+</body>
+</html>
+

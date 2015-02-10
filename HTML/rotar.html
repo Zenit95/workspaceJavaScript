@@ -1,0 +1,28 @@
+<html>
+<head><title>getElementById</title>
+<script language="JavaScript">
+n=0;
+function desplazar(){
+	for(i=document.images.length -1; i>=0; i--){
+		x = ((n + i) % 4) + 1;
+		document.images[i].src = "imagenes/" + x + ".jpg";
+	}
+	n = (n+1) % 4;
+}
+</script>
+</head>
+<body>
+<h1 align=center>Desplazar las imágenes</h1>
+<table align=center border=1>
+<tr>
+<td align=center>UNO<br><img id=uno name=uno src=imagenes/1.jpg height=150></td>
+<td align=center>DOS<br><img id=dos name=dos src=imagenes/2.jpg height=150></td>
+<td align=center>TRES<br><img id=tres name=tres src=imagenes/3.jpg height=150></td>
+<td align=center>CUATRO<br><img id=cuatro name=cuatro src=imagenes/4.jpg height=150></td>
+</tr>
+</table>
+<p align=center>
+<input type=button value="Desplazar" onclick="desplazar()">
+</p>
+</body>
+</html>

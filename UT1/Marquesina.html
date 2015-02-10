@@ -1,0 +1,22 @@
+<html>
+<head><title>Marquesina</title>
+<script language="JavaScript">
+texto="En un lugar de La Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor."
+i=0;
+function cambiar(){
+caja.value=texto.substring(0,i);
+i++;
+setTimeout("cambiar()",100);		
+
+
+}
+
+</script>
+</head>
+<body onLoad="cambiar()">
+<h1 align=center>Marquesina</h1>
+<p align=center>
+<input id=caja name=caja size=163>
+</p>
+</body>
+</html>

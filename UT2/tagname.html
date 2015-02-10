@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>Cambiar color de fondo</title>
+<script language="JavaScript">
+function cambiar(){
+	var vector = document.getElementsByTagName("DIV");
+	for(i=0; i<vector.length; i++)
+		vector[i].style.backgroundColor = elcolor.value;
+	}
+</script>
+
+<style type="text/css">
+div{width:450; background-color:yellow}
+</style>
+</head>
+<body>
+<div>
+Yo creo que sí. El equipo empezó a crecer unos 
+años antes. Se ganó la Europa League y la 
+Supercopa de Europa. Estaba en ese momento 
+en el que han estado otros clubes como Sevilla 
+o Valencia, pero que luego desaparecen. Lo 
+complicado que ha hecho la llegada del Cholo 
+es mantenerse. Llegar a una final de 
+Champions, ser campeón de Liga contra 
+Madrid y Barcelona, ganar una Copa del Rey 
+en el Bernabéu…
+</div>
+<br>
+<div>
+Marcelo atraviesa uno de los mejores 
+momentos de su carrera. El brasileño aporta 
+tanto en labores defensivas como en ataque. 
+En los dos últimos encuentros, ante Real 
+Sociedad y Sevilla, el primer tanto madridista 
+llegó del mismo modo: centro de Marcelo 
+desde la izquierda y gol de James. El lateral 
+blanco es el defensa de la Liga que suma más 
+asistencias, con un total de cinco. 
+Supera a Juanfran y Gayá, que han dado tres.
+</div>
+<br>
+<div>
+Ha ha habido que mirar varias veces al 
+monitor de tiempos para comprobar que era 
+cierto y no una alucinación el registro que 
+figuraba al lado del nombre de Marc Márquez. 
+Que el campeón volviera a auparse al primer 
+puesto era algo que entraba dentro de la lógica, 
+pero no tanto que lo hiciera con el 
+estratosférico tiempo que ha establecido. Y es 
+que el pupilo de Alzamora
+</div>
+<br>
+<p>
+Color <input id=elcolor name=elcolor maxlength=6>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type=button value="Cambiar fondo" onclick="cambiar()">
+</p>
+</body>
+</html>

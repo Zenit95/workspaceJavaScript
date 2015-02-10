@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<script language="JavaScript">
+n=1;
+
+function bajar(){
+	c=abajo.value+""+arriba.value;
+	abajo.value=c.substring(0,n);
+	arriba.value=c.substring(n,50);
+	n+=1;
+}
+</script>
+<HEAD>
+<TITLE> Bajar </TITLE>
+
+</HEAD>
+
+<BODY>
+<h1 align=center>Bajar caracteres</h1>
+<p align=center>
+<input id="arriba" name="arriba" type=text>
+</p>
+<p align=center>
+<input type=button value="Bajar" onClick="bajar()">
+</p>
+<p align=center>
+<input id="abajo" name="abajo" type=text>
+</p>
+</BODY>
+</HTML>
